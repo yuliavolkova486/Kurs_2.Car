@@ -2,31 +2,42 @@ package transport;
 
 public class Main {
     public static void main(String[] args) {
-        Car lada = new Car("Lada", "Granta", 1.7, "yellow",
-                2015, "Russia", "", "",
-                "a482ac126", 0,
+        Transport lada = new Car("Lada", "Granta", 2015, "Russia",
+                "yellow", 120, 1.7, "Mechanical",
+                "Station wagon", "a482ac126", 5,
                 new Car.Key(true, true));
-        Car audi = new Car("Audi", "A8 50 L TDI quattro", 3.0, "black",
-                2020, "Germany", "", "",
-                "y336ax156", 4,
+        Transport audi = new Car("Audi", "A8 50 L TDI quattro", 2020, "Germany",
+                "black", 180, 3.0, "Electromechanical",
+                "Sedan", "y336ax156", 4,
                 new Car.Key(true, true));
-        Car bmv = new Car("BMW", "Z8", 3.0, "black",
-                2021, "Germany","", "",
-                "", 4,
+        Transport bmv = new Car("BMW", "Z8", 2021, "Germany",
+                "black", 220,3.0, "Mechanical",
+                "Sedan", "o227ay411", 5,
                 new Car.Key(true, true));
-        Car kia = new Car("Kia", "Sportage 4th generation", 2.4, "red",
-                2018, "South Korea",
-                "", "",
-                "", 4,
+        Transport kia = new Car("Kia", "Sportage 4th generation", 2018, "South Korea",
+                "red", 180,
+                2.4, "Mechanical",
+                "Hatchback", "a698ay111", 5,
                 new Car.Key(true, true));
-        Car hyundai = new Car("Hyundai", "Avante", 1.6, "orange",
-                2016, "South Korea","", "",
-                "", 4,
+        Transport hyundai = new Car("Hyundai", "Avante", 2016, "South Korea",
+                "orange", 180,1.6, "Mechanical",
+                "Station wagon", "x259ay647", 4,
                 new Car.Key(false, true));
         System.out.println(lada);
         System.out.println(audi);
         System.out.println(bmv);
         System.out.println(kia);
         System.out.println(hyundai);
+        Transport scania = new Bus("Scania", "G-Series", 2018,
+                "Sweden", "white", 90);
+        Transport volvo = new Bus("Volvo", "9500", 2020,
+                "Sweden", "gold", 110);
+        Transport PAZ = new Bus("PAZ", "3206", 2015,
+                "Russia", "white", 100);
+        System.out.println(scania);
+        System.out.println(volvo);
+        System.out.println(PAZ);
+
+
     }
 }
